@@ -1,0 +1,90 @@
+<title>HealthEasyApp</title>
+<a href="{{ url_for('gen_ans') }}">Back</a>
+<head>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+
+body {
+	background-image: url({{ url_for ('static', filename='s2.jpg') }});
+	font-family: "Gill Sans", sans-serif;
+	color: rgba(52, 73,94);
+	font-weight: 1000;
+	line-height: 1.58;
+	letter-spacing: -.003em;
+	font-size: 20px;
+	padding: 70px;
+}
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #008CBA;} /* Blue */
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+</style>
+</head>
+
+
+
+<body class="centered-wrapper">
+  <div class="container">
+    <div>  &nbsp  </div>
+	<div>  &nbsp  </div>
+	<div>  &nbsp  </div>
+    <div>  &nbsp  </div>
+	
+    <div class="main_body" class="centered-content">
+	  <meta charset="UTF-8" />
+      <main class="main_content">
+          <h1 class="tag_line"><b>We Recommend you book an appointment with the following department:</b></h1>
+
+
+				 <div class="results">
+				    
+					{# 1. Use the key to access the value from data #}
+					{% for values in result.values() %}
+					   {% for value in values %}
+					        {% for v in value %}
+					             <h1>{{v}}</h1>
+						    {% endfor %}
+					   {% endfor %}
+                    
+					{% endfor %}
+
+
+						  
+				
+						
+				</div>
+
+
+          <div class="interstitial"><h1></h1></div>
+      </main>
+    </div>
+
+    <div class="info-body" style="display: none;">
+    </div>
+  </div>
+
+
+
+</body>

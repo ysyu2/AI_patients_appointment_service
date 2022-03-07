@@ -1,0 +1,85 @@
+<title>HealthEasyApp</title>
+<html lang="en">
+<head>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+
+body {
+	background-image: url({{ url_for ('static', filename='section1_img.jpg') }});
+	font-family: "Gill Sans", sans-serif;
+	color: rgba(52, 73,94);
+	font-weight: 1000;
+	line-height: 1.58;
+	letter-spacing: -.003em;
+	font-size: 20px;
+	padding: 70px;
+}
+
+textarea{
+    width: 50%;
+    color: Cararra;
+    background: transparent;
+    border: none;
+    outline: none;
+	font-size: 20px;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #008CBA;} /* Blue */
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+</style>
+</head>
+
+
+
+<body class="centered-wrapper">
+  <div class="container">
+    <div>  &nbsp  </div>
+	<div>  &nbsp  </div>
+    <div>  &nbsp  </div>
+	
+    <div class="main_body" class="centered-content">
+      <main class="main_content">
+          <h1 class="tag_line"><b>Feeling sick??</b><br>Please tell us your symptoms!</b></h1>
+          <div class="symptoms_input">
+		    <form action="/" method="post"><textarea name="text" rows="10" cols="50">Enter your request here.</textarea><br /><button class="button button1">Assist me! <i class="fas fa-search-plus"></i></button>
+
+			
+
+		  
+
+            
+                        
+          </div>
+          <div class="interstitial"><h1></h1></div>
+      </main>
+    </div>
+
+    <div class="info-body" style="display: none;">
+    </div>
+  </div>
+
+
+
+</body>
