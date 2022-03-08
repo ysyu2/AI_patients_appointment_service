@@ -267,7 +267,7 @@ def softmax(x):
 
 def Find_Label_embedding(example_matrix, label_embedding,emb, method='mean'):
     '''
-    @description: 根据论文《Joint embedding of words and labels》获取标签空间的词嵌入
+    @description: based on 《Joint embedding of words and labels》
     @param {type}
     example_matrix(np.array 2D): denotes words embedding of input
     label_embedding(np.array 2D): denotes the embedding of all label
