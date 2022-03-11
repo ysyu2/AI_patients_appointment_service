@@ -12,10 +12,12 @@ The framework includes preprocessing, embedding and feature engineering, model t
 
 The feature engineering technque is leveraging by this paper [Joint Embedding of Words and Labels for Text Classification](https://arxiv.org/abs/1805.04174) introducing an attention framework that measures the compatibility of embeddings between textsequences and labeles. Further, I implmented Average/Max pooling with different windows size  to generate lists of embedding array. This project can be seen as an extension to features embedding techniques.
 
+
 ## The Framework
 
 ### data preparation and semi-auto labeling
-![image](https://user-images.githubusercontent.com/34374718/157870680-0aa42790-c13e-46f5-9af7-15da32ba7310.png)
+Data labelling is exhausted and costly. The data labeling task is leveraged by the state-of-the-art algorithms,[confident learning](https://arxiv.org/abs/1911.00068), to find label errors and the [cleanlab](https://github.com/cleanlab/cleanlab) is implmented in this project. Therefore, the initiate manully labeling set is 500 and iterativly expands to 5000+ labeling set. 
+![image](https://user-images.githubusercontent.com/50165431/157873751-a8271e80-3961-41f2-af6e-0bf23151e51c.png)
 
 ### Multi-labeling classification 
 ![image](https://user-images.githubusercontent.com/50165431/157068252-02ed7d60-4062-4449-ae1e-56b291ce82b3.png)
