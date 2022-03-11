@@ -24,6 +24,16 @@ Data labelling is exhausted and costly. The data labeling task is leveraged by t
 
 ![image](https://user-images.githubusercontent.com/50165431/157069551-a1d64194-0874-4be8-9215-b182ef9065db.png)
 
+## Performance accross different feature engineering
+
+| F1-score      |fasttext with "vs_mean_label_max" + tfidf|fasttext with "vs_mean_label_max"|fasttext with "mean_all"|fasttext with "max_all"|
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Trainig set   | 0.91          | 0.89          | 0.83          | 0.79          |
+| Test set      | 0.95          | 0.91          | 0.89          | 0.85          |
+
+
+ps: "vs_mean_label_max" is the feature concatenate with ['w2v_label_max' ,'w2v_mean' ,'w2v_2_mean','w2v_3_mean' ,'w2v_4_mean']
+
 ## Core Package Components
 1.__config.py__ - _the configuration of file and model location ex: trainig/eval/test/stopwords dataset._ <br />
 2.__data.py__ - _clean dataset, remove stopwords and save tokenized string with string label._<br />
