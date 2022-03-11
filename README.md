@@ -24,4 +24,11 @@ Data labelling is exhausted and costly. The data labeling task is leveraged by t
 
 ![image](https://user-images.githubusercontent.com/50165431/157069551-a1d64194-0874-4be8-9215-b182ef9065db.png)
 
+## Core Package Components
+1.__config.py__ - _the configuration of file and model location ex: trainig/eval/test/stopwords dataset._ <br />
+2.__data.py__ - _clean dataset, remove stopwords and save tokenized string with string label._<br />
+3.__embedding.py__ - _train and save embedding & tfidf & LDA._<br />
+4.__features.py__ - _feature engineering techniques and label-word join embedding._<br />
+5.__model.py__ - _building model with sampling and parameter tuning function._<br />
+6.__app.py__ - _deploy on flask and runing on web application._<br />
 
