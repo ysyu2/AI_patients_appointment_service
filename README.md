@@ -14,7 +14,10 @@ The feature engineering technque is leveraging by this paper [Joint Embedding of
 
 ## The Framework
 
+### data preparation and semi-auto labeling
+![image](https://user-images.githubusercontent.com/34374718/157870680-0aa42790-c13e-46f5-9af7-15da32ba7310.png)
 
+### Multi-labeling classification 
 ![image](https://user-images.githubusercontent.com/50165431/157068252-02ed7d60-4062-4449-ae1e-56b291ce82b3.png)
 
 ![image](https://user-images.githubusercontent.com/50165431/157069551-a1d64194-0874-4be8-9215-b182ef9065db.png)
