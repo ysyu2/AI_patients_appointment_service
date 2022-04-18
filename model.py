@@ -32,7 +32,7 @@ import numpy as np
 import jieba
 
 #define the user token
-user_cut==True
+user_cut=True
 if user_cut:
 	jieba.load_userdict(config.user_dict)
 
